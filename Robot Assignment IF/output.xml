@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-02-12T16:59:34.866015" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment" source="/Users/supakorn.k/Desktop/RobotFramework/Robot Assignment IF/Assignment.robot">
+<test id="s1-t1" name="TC-001 Gradding" line="20">
+<kw name="Gradding">
+<if>
+<branch type="IF" condition="${score} &gt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Get A</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-02-12T16:59:34.917952" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2024-02-12T16:59:34.917679" elapsed="0.000325"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 80 and ${score} &lt;= 90">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Get B</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918106" elapsed="0.000011"/>
+</kw>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918024" elapsed="0.000111"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 70 and ${score} &lt;= 80">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Get C</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918214" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918149" elapsed="0.000090"/>
+</branch>
+<branch type="ELSE IF" condition="${score} &gt;= 60 and ${score} &lt;= 70">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Get D</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918305" elapsed="0.000009"/>
+</kw>
+<status status="NOT RUN" start="2024-02-12T16:59:34.918251" elapsed="0.000077"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>ไอ้ห่วยแตก</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-12T16:59:34.918370" elapsed="0.000064"/>
+</kw>
+<status status="PASS" start="2024-02-12T16:59:34.918339" elapsed="0.000113"/>
+</branch>
+<status status="PASS" start="2024-02-12T16:59:34.917667" elapsed="0.000798"/>
+</if>
+<arg>${score_from_student}</arg>
+<status status="PASS" start="2024-02-12T16:59:34.917526" elapsed="0.000962"/>
+</kw>
+<status status="PASS" start="2024-02-12T16:59:34.917227" elapsed="0.001322"/>
+</test>
+<status status="PASS" start="2024-02-12T16:59:34.866892" elapsed="0.051817"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Assignment">Assignment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
