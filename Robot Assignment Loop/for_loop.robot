@@ -9,7 +9,7 @@ Hero Loop
         Exit For Loop If    "${element}" == "blackwidow"
         ${number}    Evaluate    ${i}%2
         IF  ${number} == 0
-            Log To Console    ${element} 
+            Log to console    ${element} 
         END
         ${i}    Evaluate    ${i} + 1
     END
